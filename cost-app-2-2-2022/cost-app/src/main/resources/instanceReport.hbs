@@ -1,0 +1,22 @@
+<table>
+   <thead>
+      <th>Instance Name</th>
+      <th>Service Plan Name</th>
+      <th>Max Cores</th>
+      <th>Max Memory</th>
+      <th>Max Storage</th>
+      <th>Tags</th>
+   </thead>
+   <tbody>
+      {{#each main}}
+      <tr>
+         <td>{{dataMap.instance_name}}</td>
+         <td>{{dataMap.service_plan_name}}</td>
+         <td>{{dataMap.max_cores}}</td>
+         <td>{{dataMap.max_memory}}</td>
+         <td>{{dataMap.max_storage}}</td>
+         <td>{{dataMap.tags}}</td>
+      </tr>
+      {{/each}}
+   </tbody>
+</table>

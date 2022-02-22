@@ -1,0 +1,82 @@
+<table>
+   <thead>
+      <th>Instance Name</th>
+      <th>Service Plan Name</th>
+      <th>Max Cores</th>
+      <th>Max Memory</th>
+      <th>Max Storage</th>
+
+
+      <th>ApplicationName</th>
+      <th>app_category</th>
+      <th>backupsolution</th>
+      <th>billing_type</th>
+      <th>cloud_category </th>
+      <th>cloud_sub_cat</th>
+      <th>confidentiality_level</th>
+      <th>criticality</th>
+      <th>csp</th>
+      <th>customer</th>
+      <th>data_locality</th>
+      <th>deployed_on</th>
+      <th>environment</th>
+      <th>ESXBackup </th>
+      <th>hosted_location</th>
+      <th>it_business_tower</th>
+      <th>mep </th>
+      <th>organization</th>
+      <th>os </th>
+      <th>primary_owner</th>
+      <th>project </th>
+      <th>secondary_owner</th>
+      <th>server_role </th>
+      <th>shutdown_optin_optout</th>
+      <th>shutdown_schedule </th>
+      <th>snc_req_create</th>
+      <th>support_dl</th>
+      <th>support_provided_by</th>
+
+   </thead>
+   <tbody>
+      {{#each main}}
+      <tr>
+         <td>{{dataMap.instance_name}}</td>
+         <td>{{dataMap.service_plan_name}}</td>
+         <td>{{dataMap.max_cores}}</td>
+         <td>{{dataMap.max_memory}}</td>
+         <td>{{dataMap.max_storage}}</td>
+
+         
+         <td>{{dataMap.ApplicationName}}</td>
+         <td>{{dataMap.app_category}}</td>
+         <td>{{dataMap.backupsolution}}</td>
+         <td>{{dataMap.billing_type}}</td>
+         <td>{{dataMap.cloud_category }}</td>
+         <td>{{dataMap.cloud_sub_cat}}</td>
+         <td>{{dataMap.confidentiality_level}}</td>
+         <td>{{dataMap.criticality}}</td>
+         <td>{{dataMap.csp}}</td>
+         <td>{{dataMap.customer}}</td>
+         <td>{{dataMap.data_locality}}</td>
+         <td>{{dataMap.deployed_on}}</td>
+         <td>{{dataMap.environment}}</td>
+         <td>{{dataMap.ESXBackup }}</td>
+         <td>{{dataMap.hosted_location}}</td>
+         <td>{{dataMap.it_business_tower}}</td>
+         <td>{{dataMap.mep }}</td>
+         <td>{{dataMap.organization}}</td>
+         <td>{{dataMap.os }}</td>
+         <td>{{dataMap.primary_owner}}</td>
+         <td>{{dataMap.project }}</td>
+         <td>{{dataMap.secondary_owner}}</td>
+         <td>{{dataMap.server_role }}</td>
+         <td>{{dataMap.shutdown_optin_optout}}</td>
+         <td>{{dataMap.shutdown_schedule }}</td>
+         <td>{{dataMap.snc_req_create}}</td>
+         <td>{{dataMap.support_dl}}</td>
+         <td>{{dataMap.support_provided_by}}</td>
+
+      </tr>
+      {{/each}}
+   </tbody>
+</table>

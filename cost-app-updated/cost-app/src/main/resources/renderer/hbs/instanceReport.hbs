@@ -1,0 +1,111 @@
+<table>
+   <thead>
+      {{!-- <th>INSTANCE_ID</th> --}}
+      <th>INSTANCE NAME</th>
+      {{!-- <th>SERVICE_PLAN_ID</th> --}}
+      <th>SERVICE PLAN NAME</th>
+      <th>PROVISION TYPE</th>
+      <th>CLOUD NAME</th>
+
+      <th>MAX CORES</th>
+      <th>MAX MEMORY</th>
+      <th>MAX STORAGE</th>
+
+      <th>PER CORE COST</th>
+      <th>PER GB MEMORY COST</th>
+      <th>PER GB STORAGE COST</th>
+
+      <th>HOURLY COST</th>
+      <th>MONTHLY COST</th>
+
+      {{!-- <th>PROVISION_TYPE_CODE</th> --}}
+      <th>PRICE SET CODE</th>
+
+      <th>APPLICATIONNAME</th>
+      <th>APP_CATEGORY</th>
+      <th>BACKUPSOLUTION</th>
+      <th>BILLING_TYPE</th>
+      <th>CLOUD_CATEGORY</th>
+      <th>CLOUD_SUB_CAT</th>
+      <th>CONFIDENTIALITY_LEVEL</th>
+      <th>CRITICALITY</th>
+      <th>CSP</th>
+      <th>CUSTOMER</th>
+      <th>DATA_LOCALITY</th>
+      <th>DEPLOYED_ON</th>
+      <th>ENVIRONMENT</th>
+      <th>ESXBACKUP</th>
+      <th>HOSTED_LOCATION</th>
+      <th>IT_BUSINESS_TOWER</th>
+      <th>MEP</th>
+      <th>ORGANIZATION</th>
+      <th>OS</th>
+      <th>PRIMARY_OWNER</th>
+      <th>PROJECT</th>
+      <th>SECONDARY_OWNER</th>
+      <th>SERVER_ROLE</th>
+      <th>SHUTDOWN_OPTIN_OPTOUT</th>
+      <th>SHUTDOWN_SCHEDULE</th>
+      <th>SNC_REQ_CREATE</th>
+      <th>SUPPORT_DL</th>
+      <th>SUPPORT_PROVIDED_BY</th>
+
+   </thead>
+   <tbody>
+      {{#each main}}
+      <tr>
+         {{!-- <td>{{dataMap.instance_id}}</td> --}}
+         <td>{{dataMap.instance_name}}</td>
+         {{!-- <td>{{dataMap.service_plan_id}}</td> --}}
+         <td>{{dataMap.service_plan_name}}</td>
+         <td>{{dataMap.provision_type}}</td>
+         <td>{{dataMap.cloud_name}}</td>
+
+         <td>{{dataMap.max_cores}}</td>
+         <td>{{dataMap.max_memory}}</td>
+         <td>{{dataMap.max_storage}}</td>
+
+         <td>{{dataMap.per_core_cost}}</td>
+         <td>{{dataMap.per_gb_memory_cost}}</td>
+         <td>{{dataMap.per_gb_storage_cost}}</td>
+
+         <td>{{dataMap.hourly_cost}}</td>
+         <td>{{dataMap.monthly_cost}}</td>
+
+         {{!-- <td>{{dataMap.provision_type_code}}</td> --}}
+         
+         <td>{{dataMap.price_set_code}}</td>
+
+         <td>{{dataMap.ApplicationName}}</td>
+         <td>{{dataMap.app_category}}</td>
+         <td>{{dataMap.backupsolution}}</td>
+         <td>{{dataMap.billing_type}}</td>
+         <td>{{dataMap.cloud_category}}</td>
+         <td>{{dataMap.cloud_sub_cat}}</td>
+         <td>{{dataMap.confidentiality_level}}</td>
+         <td>{{dataMap.criticality}}</td>
+         <td>{{dataMap.csp}}</td>
+         <td>{{dataMap.customer}}</td>
+         <td>{{dataMap.data_locality}}</td>
+         <td>{{dataMap.deployed_on}}</td>
+         <td>{{dataMap.environment}}</td>
+         <td>{{dataMap.ESXBackup}}</td>
+         <td>{{dataMap.hosted_location}}</td>
+         <td>{{dataMap.it_business_tower}}</td>
+         <td>{{dataMap.mep}}</td>
+         <td>{{dataMap.organization}}</td>
+         <td>{{dataMap.os}}</td>
+         <td>{{dataMap.primary_owner}}</td>
+         <td>{{dataMap.project}}</td>
+         <td>{{dataMap.secondary_owner}}</td>
+         <td>{{dataMap.server_role}}</td>
+         <td>{{dataMap.shutdown_optin_optout}}</td>
+         <td>{{dataMap.shutdown_schedule}}</td>
+         <td>{{dataMap.snc_req_create}}</td>
+         <td>{{dataMap.support_dl}}</td>
+         <td>{{dataMap.support_provided_by}}</td>
+
+      </tr>
+      {{/each}}
+   </tbody>
+</table>

@@ -1,0 +1,11 @@
+> Task :assetCompile
+> Task :compileJava NO-SOURCE
+
+> Task :compileGroovy
+
+> Task :compileGroovy FAILED
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+2 actionable tasks: 2 executed
